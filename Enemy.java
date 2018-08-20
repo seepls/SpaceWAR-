@@ -231,3 +231,48 @@ public class Enemy{
 			image = bd9;
 		}
 
+  x= Math.random() * SpacePanel.width /2 +SpacePanel.width / 4 ;
+	 y =-r ;
+	 double angle = Math.random() *140+20 ;
+	  rad= Math.toRadians(angle);
+	 dx= Math.cos(rad)*speed ;
+	  dy = Math.sin(rad)*speed ;
+	 ready = false;
+		dead = false;
+		hit = false;
+		hitTimer = 0;
+	}
+	
+	//		Setters
+	//		Getters
+	public double getX () {return x;}
+	public double getY () {return y;}
+	public int getR () {return r;}
+	public boolean isDead () {return dead;}
+	public int getType () {return type;}
+	public int getRank () {return rank;}
+ public void explode () {
+	 if(rank>1){
+		 int amount = 0;
+			if (type == 1) amount = 2;
+			if (type == 2) amount = 3;
+			if (type == 3) amount = 4;
+			if (type == 4) amount = 5;
+			if (type == 5) amount = 6;
+			if (type == 6) amount = 8;
+			if (type == 7) amount = 6;
+			if (type == 8) amount = 5;
+			if (type == 9) amount = 3;
+ 		for(int i =0 ; i < amount ;i ++){
+			Enemy e = new Enemy(getType(), getRank() - 1);
+			e.x = this.x;
+			e.y = this.y;
+			double angle = 0;
+			if (!ready) angle = Math.random() * 140 + 20;
+				else angle = Math.random() * 360;
+
+				e.rad = Math.toRadians(angle);
+				SpacePanel.enemies.add(e);
+			}
+		}
+	}
