@@ -276,3 +276,10 @@ public class Enemy{
 			}
 		}
 	}
+	public void hit(){
+		health -- ;
+		if(health <=0) dead = true ;
+		hit = true;
+		hitTimer = System.nanoTime();
+	}
+		
