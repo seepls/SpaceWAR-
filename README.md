@@ -13,4 +13,4 @@ http://www.tenvinilo.com/img/vinilo/png/sticker%20infantil%20set%20de%20ovnis.pn
 
 
 
-@YOLO  but if u live well once is enough!!! 
+@YOLO  but if u live well, once is enough!!! 
