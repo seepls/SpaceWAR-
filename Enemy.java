@@ -282,4 +282,29 @@ public class Enemy{
 		hit = true;
 		hitTimer = System.nanoTime();
 	}
+	public void update(){
+		x+=dx ;
+		y+=dy ;
+		if(!ready){
+			if (x > r && x < SpacePanel.width - r && y > r && y < SpacePanel.height - r) 
+				ready = true;
+			//Bounce 
+			if(x<r && dx<0 )dx = -dx ;
+			if(y<r && dy <0 ) dy = -dy ;
+			if (x > SpacePanel.width - r && dx > 0) dx = -dx;
+			if (y > SpacePanel.height - r && dy > 0) dy = -dy;
+			if (hit) {
+			long elapsed = (System.nanoTime() - hitTimer) / 1000000;
+			if (elapsed > 50) {
+				hit = false;
+				hitTimer = 0;
+			}
+		}
+	}
+	public void draw (Graphics2D g) {
+		g.drawImage(image, (int) (x - r), (int) (y - r), (int) (r * 2), (int) (r * 1.7), null);
+	}
+}
+
+				
 		
