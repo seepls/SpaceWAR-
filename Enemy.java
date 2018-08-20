@@ -38,4 +38,196 @@ public class Enemy{
 			}
 			image = bd1;
 		}
- 
+  if(type==2 ) {
+	  if (bd2 == null) bd2 = new Generals().loadImg("/img/badass/badAss_2.png");
+			if (rank == 1) {
+				speed = 3;
+				r = 15;
+				health = 2;
+			}
+			if (rank == 2) {
+				speed = 3;
+				r = 25;
+				health = 3;
+			}
+			if (rank == 3) {
+				speed = 2.5;
+				r = 30;
+				health = 3;
+			}
+			if (rank == 4) {
+				speed = 2.5;
+				r = 40;
+				health = 4;
+			}
+			image = bd2;
+  }
+	 if(type==3 ) {
+		 if (bd3 == null) bd3 = new Generals().loadImg("/img/badass/badAss_3.png");
+			if (rank == 1) {
+				speed = 1.5;
+				r = 15;
+				health = 5;
+			}
+			if (rank == 2) {
+				speed = 1.5;
+				r = 25;
+				health = 6;
+			}
+			if (rank == 3) {
+				speed = 1.5;
+				r = 30;
+				health = 7;
+			}
+			if (rank == 4) {
+				speed = 1.5;
+				r = 40;
+				health = 8;
+			}
+			image = bd3;
+		}
+	 if(type ==4 ) {
+		 if (bd4 == null) bd4 = new Generals().loadImg("/img/badass/badAss_4.png");
+			if (rank == 1) {
+				speed = 2;
+				r = 15;
+				health = 1;
+			}
+			if (rank == 2) {
+				speed = 2;
+				r = 25;
+				health = 3;
+			}
+			if (rank == 3) {
+				speed = 2;
+				r = 30;
+				health = 4;
+			}
+			if (rank == 4) {
+				speed = 2;
+				r = 40;
+				health = 8;
+			}
+			image = bd4;
+		}
+		if (type == 5) {
+			if (bd5 == null) bd5 = new Generals().loadImg("/img/badass/badAss_5.png");
+			if (rank == 1) {
+				speed = 1.5;
+				r = 15;
+				health = 5;
+			}
+			if (rank == 2.5) {
+				speed = 2;
+				r = 25;
+				health = 6;
+			}
+			if (rank == 3) {
+				speed = 2;
+				r = 30;
+				health = 7;
+			}
+			if (rank == 4) {
+				speed = 3;
+				r = 40;
+				health = 3;
+			}
+			image = bd5;
+		}
+		if (type == 6) {
+			if (bd6 == null) bd6 = new Generals().loadImg("/img/badass/badAss_6.png");
+			if (rank == 1) {
+				speed = 1;
+				r = 15;
+				health = 7;
+			}
+			if (rank == 2) {
+				speed = 1.5;
+				r = 25;
+				health = 8;
+			}
+			if (rank == 3) {
+				speed = 1.5;
+				r = 30;
+				health = 9;
+			}
+			if (rank == 4) {
+				speed = 1.5;
+				r = 40;
+				health = 10;
+			}
+			image = bd6;
+		}
+		if (type == 7) {
+			if (bd7 == null) bd7 = new Generals().loadImg("/img/badass/badAss_7.png");
+			if (rank == 1) {
+				speed = 3;
+				r = 15;
+				health = 2;
+			}
+			if (rank == 2) {
+				speed = 3;
+				r = 25;
+				health = 5;
+			}
+			if (rank == 3) {
+				speed = 2.5;
+				r = 30;
+				health = 6;
+			}
+			if (rank == 4) {
+				speed = 1;
+				r = 40;
+				health = 15;
+			}
+			image = bd7;
+		}
+		if (type == 8) {
+			if (bd8 == null) bd8 = new Generals().loadImg("/img/badass/badAss_8.png");
+			if (rank == 1) {
+				speed = 1;
+				r = 15;
+				health = 10;
+			}
+			if (rank == 2) {
+				speed = 1;
+				r = 25;
+				health = 12;
+			}
+			if (rank == 3) {
+				speed = 1;
+				r = 30;
+				health = 14;
+			}
+			if (rank == 4) {
+				speed = 1;
+				r = 40;
+				health = 16;
+			}
+			image = bd8;
+		}
+		if (type == 9) {
+			if (bd9 == null) bd9 = new Generals().loadImg("/img/badass/badAss_9.png");
+			if (rank == 1) {
+				speed = 2.5;
+				r = 15;
+				health = 8;
+			}
+			if (rank == 2) {
+				speed = 2.5;
+				r = 25;
+				health = 10;
+			}
+			if (rank == 3) {
+				speed = 2.5;
+				r = 30;
+				health = 15;
+			}
+			if (rank == 4) {
+				speed = 3.5;
+				r = 40;
+				health = 15;
+			}
+			image = bd9;
+		}
+
