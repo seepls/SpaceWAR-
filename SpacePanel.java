@@ -27,8 +27,28 @@ public static ArrayList < Enemy> enemies ;
 	private BufferedReader brRead = null;
 	private PrintWriter outputFile;
 	private String scoreFile = "score.txt";
+	
+	public SpacePanel (){
+		super();
+		setPreferredSize (new Dimension(width ,height));
+		setFocusable(true) ;
+		requestFocus();
+	}
+		
+	public void addNotify(){
+		super.addNotify() ;
+		//Thread to start our game 
+		if (thread == null) { 
+		thread = new Thread(this) ;
+		thread.start() ;
+		}
+		addKeyListener(this) ;
+	}
   
-  
+  public void run() {
+	  running = true ;
+	  if (imgPlayer == null) imgPlayer = new Generals().loadImg("/img/hero/hero-up-transp.png");
+	  
 
 
 }
