@@ -65,5 +65,31 @@ g = (Graphics2D) image. getGraphics ();
 	if (background6 == null) background6 = new Generals().loadImg("/img/stage/stage6.jpg");
 	if (background7 == null) background7 = new Generals().loadImg("/img/stage/stage7.jpg");
 	if (background8 == null) background8 = new Generals().loadImg("/img/stage/stage8.jpg");
+	
+	player = new Player () ;
+	bullets = new ArrayList<Bullet>();
+		enemies = new ArrayList<Enemy>();
+		powerUps = new ArrayList<PowerUp>();
+		explosions = new ArrayList<Explosion>();
+		texts = new ArrayList<Text>();
+
+		waveStartTimer = 0;
+		waveStartTimerDiff = 0;
+		waveStart = true;
+		waveNumber = 0;
+	
+	long startTime ;
+		long URDTimeMillis;
+		long waitTime = 0;
+		long totalTime = 0;
+		long targetTime = 1000 / fps;
+	int frameCount = 0;
+		int maxFrameCount = 30;
+	while (running) {
+			startTime = System.nanoTime();
+
+			gameUpdate();
+			gameRender();
+			gameDraw();
 
 	
