@@ -13,6 +13,22 @@ private BufferedImage image ,imgPlayer , bk , background1 ,background2 ,backgrou
 private double averageFps ;
 private Graphics2D g ;
 private int fps = 30, waveDelay = 2000, limitLevel = 36;
+private int waveNumber ;
+private long waveStartTimer , waveStartTimerDiff ;
+private Thread thread ;
+public static Player player ;
+public static ArrayList <Bullet> bullets ;
+public static ArrayList < Enemy> enemies ;
+    public static ArrayList<PowerUp> powerUps ;
+    public static ArrayList <Explosion > explosions ;\
+        public static ArrayList <Text> texts ;
+  private File flFile = null;
+	private FileReader frRead = null;
+	private BufferedReader brRead = null;
+	private PrintWriter outputFile;
+	private String scoreFile = "score.txt";
+  
+  
 
 
 }
