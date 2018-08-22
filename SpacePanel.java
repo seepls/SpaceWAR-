@@ -48,9 +48,22 @@ public static ArrayList < Enemy> enemies ;
   public void run() {
 	  running = true ;
 	  if (imgPlayer == null) imgPlayer = new Generals().loadImg("/img/hero/hero-up-transp.png");
-	  
+	  }
 
+image = new BufferedImage ( width , height , BufferedImage.TYPE_INT_RGB);
+g = (Graphics2D) image. getGraphics ();
+	g.setRenderRingHint (RenderingHints . .KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+	g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+	
+	
+	
+	if (background1 == null) background1 = new Generals().loadImg("/img/stage/stage1.jpg");
+	if (background2 == null) background2 = new Generals().loadImg("/img/stage/stage2.jpg");
+	if (background3 == null) background3 = new Generals().loadImg("/img/stage/stage3.png");
+	if (background4 == null) background4 = new Generals().loadImg("/img/stage/stage4.jpg");
+	if (background5 == null) background5 = new Generals().loadImg("/img/stage/stage5.jpg");
+	if (background6 == null) background6 = new Generals().loadImg("/img/stage/stage6.jpg");
+	if (background7 == null) background7 = new Generals().loadImg("/img/stage/stage7.jpg");
+	if (background8 == null) background8 = new Generals().loadImg("/img/stage/stage8.jpg");
 
-}
-
-
+	
