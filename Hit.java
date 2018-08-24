@@ -1,5 +1,5 @@
 import java.awt.*;
-public class Bullet{
+public class Hit{
 private double x,y,rad,speed,dx,dy ;
 private int r ;
 private Color color ;
