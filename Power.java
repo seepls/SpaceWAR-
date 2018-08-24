@@ -3,7 +3,7 @@ import java.awt.image.*;
 import java.net.URL ;
 import javax.imageio.*;
 
-public class PowerUp{
+public class Power{
   private Color color ;
   private double x , y ; 
   private int r , type ;
