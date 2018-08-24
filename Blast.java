@@ -2,7 +2,7 @@ import java.util.*;
 import java.awt.*;
 import java.net.URL ;
 import javax.imageio.*;
-public class Explosion{
+public class Blast{
 private double x,y ;
 private int r , maxRadius ;
 private BufferedImage ex ;
